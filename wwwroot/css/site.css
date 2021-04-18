@@ -1,0 +1,238 @@
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body,
+html {
+	height: 100%;
+	box-sizing: border-box
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/*Set background image*/
+.container {
+	background-image: url("paper.gif");
+	background-color: #ddd;
+	top: 40px;
+	height: 100%; 
+	background-position: center;
+	background-size: cover;
+	overflow-y: scroll;
+	text-align: center;
+	position: relative;
+	top: 115px;
+
+}
+
+/* Position text in the middle */
+.middle {
+	position: absolute;
+	color: black;
+	top: 20%;
+	left: 20%;
+	text-align: center;
+	font-size: 25px;
+}
+
+	/*Set circle in unordered list*/
+	.middle ul {
+		list-style-type: circle;
+	}
+
+		/*Set text inside li tag to left*/
+		.middle ul li {
+			text-align: left !important;
+		}
+
+			/*Set text color for a tag inside middle class and ul>li element*/
+			.middle ul li a {
+				color: black;
+			}
+
+				/*Change text color and decoration for a tags inside middle class and ul>li element*/
+				.middle ul li a:hover {
+					color: #005221;
+					text-decoration: none;
+				}
+
+h2white {
+	color: white;
+	font-size: 30px;
+	font-family: Helvetica;
+	text-align: center;
+}
+
+h2black {
+	color: black;
+	font-size: 30px;
+	font-family: Helvetica;
+}
+
+pWhite {
+	color: white;
+	font-size: 18px;
+}
+
+/* If we want a footer*/
+.footer {
+	padding: 10px;
+	text-align: left;
+	background-color: #005221;
+	color: white;
+	font-size: 25px;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+}
+
+.bottom{
+	position:relative;
+	text-align:center;
+	top: 0px;
+}
+/* Creates a dark green header */
+.header {
+	overflow: hidden;
+	background-color: #005221;
+	padding: 10px 10px;
+	text-align: left;
+	font-size: 25px;
+	/*min-height: 10% !important;*/
+	width: 100%;
+	position: fixed;
+	top: 0;
+	/*ensures that text goes under when scrolling*/
+	z-index: 1;
+}
+
+	/* Styles for our links in the header */
+	.header a {
+		float: left;
+		color: white;
+		text-align: center;
+		padding: 12px;
+		text-decoration: none;
+		font-size: 18px;
+		line-height: 20px;
+		border-radius: 4px;
+	}
+
+
+		/* Styles the mouse-hover */
+		.header a:hover {
+			background-color: white;
+			color: #005221;
+		}
+
+		/* Style for the link we are currently on*/
+		.header a.active {
+			background-color: black;
+			color: white;
+		}
+
+/* Float the link section to the right */
+.header-right {
+	float: right;
+}
+
+table {
+	border-collapse: separate;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 30%;
+}
+
+/*Styling for header row*/
+th {
+	background-color: #005221;
+	color: white;
+}
+
+th,
+td {
+	width: 150px;
+	text-align: center;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+/*Styling for normal rows*/
+td {
+	background-color: white;
+}
+
+/*To create picture columns for our "About Us"*/
+.column {
+	float: left;
+	/*width: 20%;*/
+	margin-bottom: 16px;
+	/*padding: 0 40px;*/
+	width: 33.3%;
+	padding: 0 8px;
+}
+
+/*Subcontainer is for our picture containers within the container*/
+.subcontainer {
+	padding: 0 16px;
+}
+
+/* Clear floats */
+.subcontainer::after, .row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/*For fitting our About Us photos*/
+@media screen and (max-width: 600px) {
+	.column {
+		width: 100%;
+		display: block;
+	}
+}
+
+/*For fitting our ERD*/
+img {
+	padding: 0;
+	display: block;
+	margin: 0 auto;
+	max-height: 100%;
+	max-width: 100%;
+}
+/*On mobile, make the container start from the top*/
+@media only screen and (max-width: 600px) {
+	.container {
+		width: 100%;
+		top: 0px;
+	}
+}
+/*For mobile, stack header links on top of each other for a nicer appearance */
+@media screen and (max-width: 600px) {
+	.header a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+	.header-right {
+		float: none;
+	}
+}
+/*Make sure the header is no longer fixed on mobile because it takes up too much space*/
+@media screen and (max-width: 600px) {
+	.header {
+		position: relative;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+	/* For tablets */
+	.container {
+		width: 80%;
+	}
+}
+/*Everything else looks fine for medium screen/tablets */
+
+
+

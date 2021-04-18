@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<title>About Us</title>
+</head>
+
+<body>
+    <div class="header">
+        <h2white>
+            FBI Crimes by Offense and Year: About Us
+        </h2white>
+        <hr>
+        <pWhite>
+            Project by Dharmarakshit Harley, Samrat Korupolu and Michael Zeolla
+        </pWhite>
+        <div class="header-right">
+            <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            <a asp-area="" asp-controller="Home" asp-action="mainpage">Main Page</a>
+            <a class="active" asp-area="" asp-controller="Home" asp-action="aboutUs">About Us</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGANt9snAkYXQ/profile-displayphoto-shrink_800_800/0/1579472126535?e=1621468800&v=beta&t=F9c6fz7AJxNIapFCJT3ZjpqU-ZPUTkcPn_GdMgTwvnQ" alt="michaelPhoto" style="width:70%">
+                <div class="subcontainer">
+                    <h2black>Michael Zeolla</h2black>
+                    <p style="font-size: 18px">
+                        Michael is a second-semester student in the program and resides in Jacksonville, Florida. He graduated from the University of Florida
+                        in 2020 and aspires to be a data analyst. Particular interests include sports, and revolution of analytics in sports is a major passion.
+                        He designed the website format, About Us page, and the headers and footers.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <img src="https://media-exp1.licdn.com/dms/image/C5103AQFFwL2ZfyhMBw/profile-displayphoto-shrink_800_800/0/1550118658978?e=1621468800&v=beta&t=OC9lHkP-D2akML3ZXl9yBxsTbonBdo6InHyttmQUJ7U" alt="dharmaPhoto" style="width:70%">
+                <div class="subcontainer">
+                    <h2black>Dharmarakshit Harley</h2black>
+                    <p style="font-size: 18px">
+                        Dharmarakshit is a first-semester student with 6 years of experience in mostly German Automotive companies. He has recently moved to Tampa, Florida in Jan 2021. He will be graduated from the University of Florida at end of Spring 2022. He is working towards becoming a data scientist.
+                        He is very passionate about cricket, mostly watching, reading books, watching Netflix.
+                        He designed the website structure, worked on the About Us page, creating CRUD operation for the website, and deployment the website.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <img src="https://media-exp1.licdn.com/dms/image/C5103AQFOpVbsgO8T7A/profile-displayphoto-shrink_800_800/0/1582218830391?e=1621468800&v=beta&t=nvPZPmgrPsgLWfVrFEAEgxr9zbijVcmIkcNsl2E3GwM" alt="samratPhoto" style="width:70%">
+                <div class="subcontainer">
+                    <h2black>Samrat Korupolu</h2black>
+                    <p style="font-size: 18px">
+                        Samrat is a BAIS student at USF Muma and resides in Tampa, Florida. He is a Retired Lieutenant from Indian Navy.
+                        Aspires to be a data analyst. Passionate about machine learning & analytics.
+                        He implemented the CRUD functionality.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <br />
+        <h2black>Data Model</h2black>
+        <br />
+        <a href="https://s3-us-gov-west-1.amazonaws.com/cg-d4b776d0-d898-4153-90c8-8336f86bdfec/NIBRS_DataDictionary.pdf" target="_blank">Link to data dictionary</a>
+        <br />
+        <a href="https://s3-us-gov-west-1.amazonaws.com/cg-d4b776d0-d898-4153-90c8-8336f86bdfec/nibrs_diagram.pdf" target="_blank">Link to data diagram.</a>
+        <br />
+        <p>Our data model is referenced from the FBI's given data diagram. For our assignment, we want to look at the total number of arrests by the type of offense and year.</p>
+        <br />
+        <img src="~/Img/FBI_ERD.png" asp-append-version="true">
+        <br />
+        <h2black>API Endpoints</h2black>
+        <br />
+        <a href="https://crime-data-explorer.fr.cloud.gov/api" target="_blank">List of FBI Crime Data's APIs</a>
+        <br />
+        <p>The FBI Crime Data Explorer offers several extentions to their API for information on arrests and offenders that can be used for our project's data.</p>
+        <br />
+        <h2black>GitHub Link</h2black>
+        <br />
+        <a href="https://github.com/michaelzeolla/Assignment_LookAndFeel" target="_blank">Click here for the team's repository on Michael Zeolla's GitHub</a>
+        <br />
+    </div>
+
+
+    <div class="footer">
+        <pWhite>Copyright &#169 May 2021 | ISM 6225 | USF</pWhite>
+    </div>
+</body>
+</html>

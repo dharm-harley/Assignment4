@@ -1,0 +1,95 @@
+﻿@*<head>
+        <style>
+
+
+            .Home {
+                text-decoration: none;
+                display: initial;
+                padding: 10px 20px;
+                color: black;
+                text-align: center;
+                font-size: 20px;
+                font-family: calibri;
+                background-color: orangered;
+                color: seashell;
+                <button type="button" class="btn btn-primary">Default</button>
+            }
+
+
+
+
+            h1 {
+                color: white;
+            }
+        </style>
+    </head>
+
+
+    <div class="text-center">
+        <br />
+        <br />
+        <h1>
+            Get Access to Nutrition and obesity data all oer the country at one place!!!
+        </h1>
+        <br />
+        <br />
+
+        <a class="Home" asp-controller="Home" asp-action="Explore">Explore</a>
+    </div>*@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <title>DIS_HOME</title>
+</head>
+
+<body>
+    <div class="header">
+        <h2white>
+            FBI Crimes by Offense and Year: Welcome
+        </h2white>
+        <hr>
+        <pWhite>
+            Project by Dharmarakshit Harley, Samrat Korupolu and Michael Zeolla
+        </pWhite>
+        <div class="header-right">
+            <a class="active" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            <a asp-area="" asp-controller="Home" asp-action="mainpage">Main Page</a>
+            <a asp-area="" asp-controller="Home" asp-action="aboutUs">About Us</a>
+        </div>
+    </div>
+
+    <div class="container" style="text-align: left">
+        <br />
+        <br />
+        <h2black style="padding: 15px">
+            Welcome to our Project!
+        </h2black>
+        <p style="padding: 20px">
+            This is our website for ISM 6225, Distributed Information Systems.
+            This website details crime in the United States using data from the Federal Bureau of Investigation and their API found on data.gov.
+            Here we will display the total number of arrests within a year by the type of offense (Aggravated Assault, Larceny, DUI, etc.).
+            It can be insightful to see which types of offenses count for the most arrests, as well as how those numbers have changed over the years.
+            <br />
+            <br />
+            Check out our About Us page for details about the group members as well as further details of the project.
+            <br />
+            <br />
+            Check out our Main page to see our data table.
+        </p>
+
+        <img src="./img/FBI_logo.png" alt="FBI" align="middle">
+    </div>
+
+    <div class="footer">
+        <pWhite>Copyright &#169 March 2021 | ISM 6225 | USF</pWhite>
+    </div>
+
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
